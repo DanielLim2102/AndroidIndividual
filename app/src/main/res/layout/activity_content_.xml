@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_content_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/cream"
+    tools:context="com.example.danie.daniel2.Content_Activity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="#2d2d2d"
+                android:layout_marginTop="-20dp"
+                android:id="@+id/content_img_id"
+                android:scaleType="centerCrop"
+                android:transitionName="card_transition"/>
+            <CheckBox
+                android:button="@drawable/fav_checkbox_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="5dp"
+
+                android:id="@+id/cbfavourite"/>
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btshare"
+            android:layout_marginTop="-25dp"
+                android:layout_marginLeft="150dp"
+            android:background="@drawable/ic_share_black_24dp"/>
+
+
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content Title"
+                android:fontFamily="serif"
+                android:textColor="@color/cinamon"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"/>
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/cinamon"/>
+
+            <TextView
+                android:id="@+id/txtcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/cream"
+                android:background="@color/cayenne"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serves : "
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/cayenne"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_restaurant_menu_black_24dp"
+                android:layout_marginLeft="7dp"/>
+
+
+            <TextView
+                android:id="@+id/txtserving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="num" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal "
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:drawableLeft="@drawable/ic_stars_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:textColor="#FF000000"
+                    android:textStyle="bold"
+                    android:id="@+id/txtdifficulty"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:text="Cook : "
+                    android:textSize="18sp"
+                    android:drawablePadding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/cayenne"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/txtpt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="20 min" />
+
+            </LinearLayout>
+            <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cinamon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrdients"
+                android:textColor="@color/cinamon"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txtdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#FF000000"
+                android:textSize="18sp"/>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
